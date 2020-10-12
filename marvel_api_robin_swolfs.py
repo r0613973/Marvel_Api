@@ -6,11 +6,11 @@ import hashlib
 #The main link to connect to the api to search a comic book character 
 main_api = "http://gateway.marvel.com/v1/public/characters?"
 #This is your public key
-key = "edcc62243b5a408be06ed9b8036b2f5b"
+key = "..."
 #You always need to provide a timestamp
 timestamp = "1"
 #This is your private key 
-private_key = "485125d533f1acf16c38e07ba9a3c6bbff35c9cc"
+private_key = "..."
 pre_hash = timestamp + private_key + key
 #You'll need to use a MD5 hash before you can enter the API
 result = hashlib.md5(pre_hash.encode())
